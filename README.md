@@ -11,7 +11,7 @@ So what's wrong, you may ask?:
 
 All that being said, It gave me a lot of practice, especially the 'rendering' of articles with a fake .json file. When I was recreating this blog as a React app, I already had a pretty good understanding of what I needed to do, thanks to this project. And I'm still very proud of the [weather cards](https://codepen.io/zuzOup/pen/LYvQybW) - based on historical API from [Open-meteo](https://open-meteo.com/) cards show mean, min, max and feels-like temperatures and also corresponding animation. 
 
-[^1]: Hope you enjoyed this cringe ♥
+[^1]: Hope you enjoyed this dose of cringe ♥
 
 
 
