@@ -438,4 +438,3 @@ if (innerWidth >= 1250) {
   addTemperature();
 }
 
-console.log(innerWidth);
