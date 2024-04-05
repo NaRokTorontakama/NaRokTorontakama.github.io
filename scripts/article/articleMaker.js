@@ -48,8 +48,9 @@ function htmlPush(bodyData) {
       
         /*article with wrap image 
    
-   */ if (bodyData[i][9] === "a") {
-        const divImgWrap = `<div class='divImgWrap'><img src="./${articleNumber}/${imgCounter}.jpg"/>${
+   */if (bodyData[i][9] === "a") {
+        const divImgWrap = `<div class='divImgWrap'><img src="https://picsum.photos/1000/750"/>${
+          // src="./${articleNumber}/${imgCounter}.jpg"
           bodyData[i - 1]
         }</div>`;
         body.push(divImgWrap);
@@ -58,8 +59,8 @@ function htmlPush(bodyData) {
         
         plain image <img full> 
         */
-      } else if (bodyData[i][9] === "f") {
-        body.push(`<img src="./${articleNumber}/${imgCounter}.jpg"/>`);
+      }else if (bodyData[i][9] === "f") {
+        body.push(`<img src="https://picsum.photos/1000/750"/>`); // src="./${articleNumber}/${imgCounter}.jpg"
         /*
         
         image gallery <img grid*rows* { grid-area: x/x/x/x;}>  3:2 -> 3:1.95
@@ -80,12 +81,10 @@ function htmlPush(bodyData) {
           const imgGridMaker = gridMaker.map((x) => x.substr(17, 25));
           let innerGrid = "";
 
-          for (let j = 0; j < imgGridMaker.length; j++) {
+            for (let j = 0; j < imgGridMaker.length; j++) {
             innerGrid =
               innerGrid +
-              `<div style="${imgGridMaker[j]}"><img src="./${articleNumber}/${
-                imgCounter - imgGridMaker.length + j + 1
-              }.jpg" /></div>`;
+              `<div style="${imgGridMaker[j]}"><img src="https://picsum.photos/1000/750"/> /></div>`; //src="./${articleNumber}/${imgCounter - imgGridMaker.length + j + 1}.jpg"
           }
 
           if (window.innerWidth <= 480) {
