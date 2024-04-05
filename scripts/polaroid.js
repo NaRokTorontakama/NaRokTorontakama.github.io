@@ -55,7 +55,7 @@ const polaroidImg = document.getElementsByClassName("polaroidImg");
 
 
 for (let i = 0; i < polaroidImg.length; i++) {
-  polaroidImg[i].innerHTML = `<img src="https://picsum.photos/1000/750"/>`; //src="./Articles/${reversed[i].code}/${reversed[i].minipicture}"
+  polaroidImg[i].innerHTML = `<img src="./Articles/${reversed[i].code}/${reversed[i].minipicture}"/>`;
 }
 
 /*text in polaroid*/
