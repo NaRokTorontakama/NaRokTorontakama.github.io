@@ -10,7 +10,7 @@ const nextArticleNumber = currentArticleNumber + 1;
 
 function fillNP(number, photo, text, NP, arrow) {
   const dateNP = newDate(window.data[number].date);
-photo.innerHTML = `<img src='https://picsum.photos/1000/750'/>`; // src='./${number}/minipicture.jpg'
+photo.innerHTML = `<img src='./${number}/minipicture.jpg'/>`; // 
   text.innerHTML = `<span><span class='hiddenArrow NPtag'> ${arrow} </span><p class='NPtag'>${NP} článek</p><div class='fillerSpan'></div></span><span><p class='NPtitle'>${window.data[number].title}</p></span><span><p class='NPdate'>${dateNP}</p><div class='fillerSpan'></div></span>`;
 }
 
