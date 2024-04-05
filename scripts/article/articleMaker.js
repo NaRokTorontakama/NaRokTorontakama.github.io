@@ -49,8 +49,8 @@ function htmlPush(bodyData) {
         /*article with wrap image 
    
    */if (bodyData[i][9] === "a") {
-        const divImgWrap = `<div class='divImgWrap'><img src="https://picsum.photos/1000/750"/>${
-          // src="./${articleNumber}/${imgCounter}.jpg"
+        const divImgWrap = `<div class='divImgWrap'><img  src="./${articleNumber}/${imgCounter}.jpg"/>${
+
           bodyData[i - 1]
         }</div>`;
         body.push(divImgWrap);
