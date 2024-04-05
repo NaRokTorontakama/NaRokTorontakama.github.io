@@ -60,7 +60,7 @@ function htmlPush(bodyData) {
         plain image <img full> 
         */
       }else if (bodyData[i][9] === "f") {
-        body.push(`<img src="https://picsum.photos/1000/750"/>`); // src="./${articleNumber}/${imgCounter}.jpg"
+        body.push(`<img src="./${articleNumber}/${imgCounter}.jpg"/>`); 
         /*
         
         image gallery <img grid*rows* { grid-area: x/x/x/x;}>  3:2 -> 3:1.95
@@ -84,7 +84,7 @@ function htmlPush(bodyData) {
             for (let j = 0; j < imgGridMaker.length; j++) {
             innerGrid =
               innerGrid +
-              `<div style="${imgGridMaker[j]}"><img src="https://picsum.photos/1000/750"/> /></div>`; //src="./${articleNumber}/${imgCounter - imgGridMaker.length + j + 1}.jpg"
+              `<div style="${imgGridMaker[j]}"><img src="./${articleNumber}/${imgCounter - imgGridMaker.length + j + 1}.jpg"/> /></div>`; //
           }
 
           if (window.innerWidth <= 480) {
