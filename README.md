@@ -9,7 +9,7 @@ So what's wrong, you may ask?:
  * _Semantic HTML? Who is she?_ At least it has headers and footers. And a bunch of <img> elements that should've been CSS background.
  * _Images stored on Github_ All of them...
 
-All that being said, It gave me a lot of practice, especially the 'rendering' of articles with a fake .json file. When I was recreating this blog as a React app, I already had a pretty good understanding of what I needed to do, thanks to this project. And I'm still very proud of the weather cards - based on historical API from [[Open-meteo](https://open-meteo.com/) cards show mean, min, max and feels-like temperatures and also corresponding HTML+CSS only animation. 
+All that being said, It gave me a lot of practice, especially the 'rendering' of articles with a fake .json file. When I was recreating this blog as a React app, I already had a pretty good understanding of what I needed to do, thanks to this project. And I'm still very proud of the weather cards - based on historical API from [Open-meteo](https://open-meteo.com/) cards show mean, min, max and feels-like temperatures and also corresponding HTML+CSS only animation. 
 
 
 
